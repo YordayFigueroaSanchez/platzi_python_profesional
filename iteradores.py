@@ -11,8 +11,13 @@ def iterar():
         except StopIteration:
             break
 
+def ciclo_for():
+    my_list = [1,2,3,4,56,6]
+    for element in my_list:
+        print(element)
 def run():
-    iterar()
+    #iterar()
+    ciclo_for()
 
 if __name__ == '__main__':
     run()

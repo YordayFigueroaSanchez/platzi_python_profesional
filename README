@@ -1,0 +1,6 @@
+py -m venv venv
+touch .gitignore
+.\venv\Scripts\activate
+pip install mypy
+
+ mypy palindrome.py --check-untyped-defs

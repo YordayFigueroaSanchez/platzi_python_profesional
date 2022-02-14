@@ -1,8 +1,8 @@
 import time
 
-def fibonacci_generator():
+def fibonacci_generator(max : int) -> int:
     n0, n1 = 0, 1
-    while True:
+    while n0 <= max:
         yield n0
         n0, n1 = n1, n0+n1
 
@@ -24,7 +24,7 @@ def fibonacci_generator():
 #             yield aux
 
 if __name__ == '__main__':
-    fibonacci = fibonacci_generator()
+    fibonacci = fibonacci_generator(100)
     for element in fibonacci:
         print(element)
         time.sleep(1)

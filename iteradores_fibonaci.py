@@ -15,8 +15,9 @@ class FiboIter():
             return self.n1
         else:
             self.aux = self.n0 + self.n1
-            self.n0 = self.n1
-            self.n1 = self.aux
+            #self.n0 = self.n1
+            #self.n1 = self.aux
+            self.n0, self.n1 = self.n1, self.aux
             return self.aux
 
 def run():
@@ -24,6 +25,6 @@ def run():
     for element in fibonacci:
         print(element)
         time.sleep(1)
-        
+
 if __name__ == '__main__':
     run()

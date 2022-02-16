@@ -4,3 +4,10 @@ touch .gitignore
 pip install mypy
 
  mypy palindrome.py --check-untyped-defs
+
+ operaciones con conjuntos(set)
+    union
+    interseccion
+    diferencia
+    diferencia simetrica
+

@@ -11,3 +11,5 @@ pip install mypy
     diferencia
     diferencia simetrica
 
+zona horaria
+    pip install pytz
